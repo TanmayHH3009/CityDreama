@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(135deg, black, rgb(37, 33, 33), black);
+  background-size: 1000% 1000%; /* Larger size for more pronounced wavy effect */
+  animation: waveAnimation 4s infinite ease-in-out; /* Linear animation for smooth continuous movement */
+  background-position: 0% 50%; /* Start from left */
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  margin-bottom: 100px;
+  /* overflow: hidden; Hide overflowing background waves */
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0% 50%; /* Start from left */
+  }
+  50% {
+    background-position: 100% 50%; /* Move to the right */
+  }
+  100% {
+    background-position: 0% 50%; /* Repeat the cycle */
+  }
+}
